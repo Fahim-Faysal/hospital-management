@@ -38,7 +38,6 @@ const Register = () => {
             const value = e.target.value;
             const newValue = { ...values }
             newValue[field] = value;
-            console.log(newValue);
             setValue(newValue)
             e.preventDefault()
 

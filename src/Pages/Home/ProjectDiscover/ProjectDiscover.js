@@ -18,7 +18,7 @@ const ProjectDiscover = () => {
                   <Box>
 
                         <Typography sx={{ width: '50%', fontWeight: 'bold', margin: 'auto', marginBottom: '70px' }} variant="h4" gutterBottom component="div">
-                              Discover the latest interior Design  <br />
+                              Some of our Test  <br />
                               avalilable today
                         </Typography>
 

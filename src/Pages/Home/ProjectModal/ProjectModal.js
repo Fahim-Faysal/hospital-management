@@ -21,10 +21,10 @@ const style = {
 
 
 const ProjectModal = ({ open, handleClose, design }) => {
-      const { img, description, price, name } = design;
+      const { image, description, cost, name } = design;
       const { user } = useAuth()
 
-      const [values, setValues] = useState({ email: user?.email, name, price })
+      const [values, setValues] = useState({ email: user?.email, name, cost })
       const [success, setSucess] = useState(false)
 
       const handelSubmit = e => {
@@ -68,7 +68,7 @@ const ProjectModal = ({ open, handleClose, design }) => {
 
                                     <Grid xs={6} sm={6} md={8} lg={6}>
 
-                                          <img style={{ width: '500px', height: '300px' }} src={img} alt="" />
+                                          <img style={{ width: '500px', height: '300px' }} src={image} alt="" />
                                           <br />
                                           <Typography variant="h4">
                                                 Description
@@ -78,12 +78,12 @@ const ProjectModal = ({ open, handleClose, design }) => {
                                           </Typography>
                                           <br />
                                           <Typography sx={{ color: 'red', marginTop: '10px' }} variant='h4'>
-                                                Price: $ {price}
+                                                Price: $ {cost}
                                           </Typography>
                                     </Grid>
                                     <Grid style={{ display: 'flex', justifyContent: 'center' }} xs={6} sm={6} md={4} lg={6}>
                                           <form onSubmit={handelSubmit} style={{ width: '75%' }}>
-                                                <Typography variant='h3'>Fill up the form for this design</Typography>
+                                                <Typography variant='h3'>Fill up the form for reserve a test</Typography>
                                                 <br />
 
                                                 <TextField onBlur={handelBlur} sx={{ width: '100%', margin: '10px' }} value={user?.email} name='email' type='email' label="User Email" required />
@@ -93,7 +93,7 @@ const ProjectModal = ({ open, handleClose, design }) => {
 
                                                 <br />
 
-                                                <TextField onBlur={handelBlur} sx={{ width: '100%', margin: '10px' }} value={price} name='price' type='number' label="price" required />
+                                                <TextField onBlur={handelBlur} sx={{ width: '100%', margin: '10px' }} value={cost} name='price' type='number' label="price" required />
 
                                                 <br />
 

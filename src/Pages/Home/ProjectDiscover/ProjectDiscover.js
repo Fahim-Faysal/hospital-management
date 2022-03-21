@@ -5,12 +5,12 @@ import ProjectShow from '../ProjectShow/ProjectShow';
 
 const ProjectDiscover = () => {
 
-      const [designs, setDesign] = useState([])
+      const [tests, setTest] = useState([])
 
       useEffect(() => {
-            fetch('https://peaceful-citadel-92019.herokuapp.com/design')
+            fetch('http://localhost:4000/medical')
                   .then(res => res.json())
-                  .then(data => setDesign(data))
+                  .then(data => setTest(data))
       }, [])
 
       return (
@@ -26,7 +26,7 @@ const ProjectDiscover = () => {
                   <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} spacing={4}>
 
                         {
-                              designs.map(design => <ProjectShow
+                              tests.map(design => <ProjectShow
                                     key={design.name}
                                     design={design}
                               ></ProjectShow>

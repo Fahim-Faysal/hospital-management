@@ -4,7 +4,7 @@ import React from 'react';
 import ProjectModal from '../ProjectModal/ProjectModal';
 
 const ProjectShow = ({ design }) => {
-      const { img, location, name } = design
+      const { image, name, price, description } = design
       const [open, setOpen] = React.useState(false);
       const handleOpen = () => setOpen(true);
       const handleClose = () => setOpen(false);
@@ -18,7 +18,7 @@ const ProjectShow = ({ design }) => {
                                           component="img"
                                           width="450"
                                           height="330"
-                                          image={img}
+                                          image={image}
                                     />
                                     <CardContent>
                                           <Typography gutterBottom variant="h5" component="div">
@@ -26,7 +26,7 @@ const ProjectShow = ({ design }) => {
                                           </Typography>
                                           <Typography variant="body2" color="text.secondary">
                                                 <LocationOn ></LocationOn>
-                                                {location}
+                                                {description}
                                           </Typography>
                                     </CardContent>
                               </CardActionArea>

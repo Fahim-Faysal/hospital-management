@@ -1,0 +1,8 @@
+.service{
+     overflow: hidden;
+}
+
+.service:hover img{
+      transform: scale(1.2);
+      transition: transform 3s;
+}

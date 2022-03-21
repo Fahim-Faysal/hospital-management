@@ -28,7 +28,7 @@ const BookingList = () => {
       const { user } = useAuth()
       const [bookings, setBookings] = useState([])
       useEffect(() => {
-            fetch(`https://peaceful-citadel-92019.herokuapp.com/booking?email=${user?.email}`)
+            fetch(`http://localhost:4000/appointments?email=${user?.email}`)
                   .then(res => res.json())
                   .then(data => setBookings(data))
       }, [])
@@ -36,7 +36,7 @@ const BookingList = () => {
       const handelDelete = (id) => {
             const proceed = window.confirm('Are you sure you want to delete?')
             if (proceed) {
-                  fetch(`https://peaceful-citadel-92019.herokuapp.com/booking/${id}`, {
+                  fetch(`http://localhost:4000/appointments?/${id}`, {
                         method: 'DELETE',
 
                   })
@@ -71,7 +71,7 @@ const BookingList = () => {
                                           sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     >
                                           <TableCell component="th" scope="row">
-                                                {booking.displayName}
+                                                {user?.displayName}
                                           </TableCell>
 
                                           <TableCell align="right">{booking?.name}</TableCell>

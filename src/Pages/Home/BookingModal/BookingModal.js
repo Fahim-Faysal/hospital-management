@@ -33,7 +33,7 @@ const BookingModal = ({ service, open, handleOpen, handleClose }) => {
             e.preventDefault()
             const result = { ...info }
             console.log(result);
-            fetch('https://peaceful-citadel-92019.herokuapp.com/booking', {
+            fetch('http://localhost:4000/appointment', {
                   method: 'POST',
                   headers: {
                         'content-type': 'application/json'

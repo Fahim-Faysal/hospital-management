@@ -49,9 +49,9 @@ const Dashboard = (props) => {
                         {
                               !admin &&
                               <Box>
-                                    <Link style={{ textDecoration: 'none' }} to='/dashboard/bookinglist'><Button color="inherit"><ShoppingBagOutlinedIcon /> Booking List</Button>
+                                    <Link style={{ textDecoration: 'none' }} to='/dashboard/bookinglist'><Button color="inherit"><ShoppingBagOutlinedIcon /> Booked List</Button>
                                     </Link>
-                                    <Link style={{ textDecoration: 'none' }} to='/dashboard/orderlist'><Button color="inherit"><List />Ordered design List</Button>
+                                    <Link style={{ textDecoration: 'none' }} to='/dashboard/orderlist'><Button color="inherit"><List />Appointments</Button>
                                     </Link>
                                     <br />
                                     <Link style={{ textDecoration: 'none' }} to='/dashboard/review'><Button color="inherit"><RateReviewOutlinedIcon />Review</Button></Link>

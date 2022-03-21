@@ -47,10 +47,10 @@ const InteriorDesign = () => {
                   <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={6} lg={8}>
                               <form onSubmit={formSubmit}>
-                                    <TextField onBlur={handelOnBlur} sx={{ width: '75%', margin: '10px' }} name='name' type='text' label="Project Name" required />
+                                    <TextField onBlur={handelOnBlur} sx={{ width: '75%', margin: '10px' }} name='name' type='text' label="Appointment Name" required />
 
                                     <br />
-                                    <TextField onBlur={handelOnBlur} sx={{ width: '75%', margin: '10px' }} name='location' type='text' label="Location" required />
+                                    <TextField onBlur={handelOnBlur} sx={{ width: '75%', margin: '10px' }} name='location' type='text' label="Chember" required />
 
                                     <br />
 

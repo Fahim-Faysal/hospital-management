@@ -47,7 +47,7 @@ const AddService = () => {
                   <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={6} lg={8}>
                               <form onSubmit={formSubmit}>
-                                    <TextField onBlur={handelOnBlur} sx={{ width: '75%', margin: '10px' }} name='name' type='text' label="Service Title" required />
+                                    <TextField onBlur={handelOnBlur} sx={{ width: '75%', margin: '10px' }} name='name' type='text' label="Appointment Title" required />
 
                                     <br />
 
@@ -55,7 +55,7 @@ const AddService = () => {
 
                                     <br />
 
-                                    <TextField onBlur={handelOnBlur} sx={{ width: '75%', margin: '10px' }} name='img' type='text' label="Image Url" required />
+                                    <TextField onBlur={handelOnBlur} sx={{ width: '75%', margin: '10px' }} name='img' type='text' label="Doctor Image Url" required />
 
                                     <br />
 

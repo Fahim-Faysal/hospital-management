@@ -6,7 +6,7 @@ import ServiceShow from '../ServiceShow/ServiceShow'
 const Service = () => {
       const [services, setServices] = useState([])
       useEffect(() => {
-            fetch('https://peaceful-citadel-92019.herokuapp.com/service')
+            fetch('http://localhost:4000/appointments')
                   .then(res => res.json())
                   .then(data => setServices(data))
 
@@ -16,8 +16,8 @@ const Service = () => {
       return (
             <Container sx={{ marginTop: '50px' }}>
                   <Typography sx={{ width: '50%', fontWeight: 'bold', margin: 'auto', marginBottom: '70px' }} variant="h4" gutterBottom component="div">
-                        Wr're an agency tailored to all <br />
-                        client's needs that always delivers
+                        Here is our Todays <br />
+                        Appointments
                   </Typography>
                   <Grid container spacing={4} style={{ display: 'flex' }}>
 

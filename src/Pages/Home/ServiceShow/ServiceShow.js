@@ -7,7 +7,7 @@ import BookingModal from '../BookingModal/BookingModal';
 const ServiceShow = ({ service }) => {
       const { user } = useAuth()
 
-      const { name, description, img } = service;
+      const { name, price, description, image } = service;
 
       const [open, setOpen] = React.useState(false);
       const handleOpen = () => setOpen(true);
@@ -26,7 +26,7 @@ const ServiceShow = ({ service }) => {
                         },
                   }}>
                         <Paper className='service'>
-                              <img style={{ height: '100px', width: '130px' }} src={img} alt="" />
+                              <img style={{ height: '100px', width: '130px' }} src={image} alt="" />
                               <Typography sx={{ color: 'blueviolet' }} variant='h6' gutterBottom component="div">
                                     {name} <br />
                                     <span style={{ color: 'red' }}>$ {service?.price}</span>

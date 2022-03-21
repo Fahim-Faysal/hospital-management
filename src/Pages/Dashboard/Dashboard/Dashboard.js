@@ -40,9 +40,9 @@ const Dashboard = (props) => {
                               <Box>
                                     <Link style={{ textDecoration: 'none' }} to='/dashboard/makeadmin'><Button color="inherit"><AdminPanelSettings /> Make Admin</Button>
                                     </Link>
-                                    <Link style={{ textDecoration: 'none' }} to='/dashboard/addservice'><Button color="inherit"><Add /> Add Service</Button>
+                                    <Link style={{ textDecoration: 'none' }} to='/dashboard/addservice'><Button color="inherit"><Add />Make new Appointment for Patients</Button>
                                     </Link>
-                                    <Link style={{ textDecoration: 'none' }} to='/dashboard/interiordesign'><Button color="inherit"><DriveFolderUpload />Add Todays Desgin</Button>
+                                    <Link style={{ textDecoration: 'none' }} to='/dashboard/interiordesign'><Button color="inherit"><DriveFolderUpload />Set Todays Appointment</Button>
                                     </Link>
                               </Box>
                         }

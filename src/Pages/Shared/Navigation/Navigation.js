@@ -9,16 +9,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@mui/styles';
 import { useTheme } from '@mui/material';
-import logo from '../../../Image_Icon/Group 33069.png'
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import useAuth from '../../Hooks/useAuth';
-
-
-
 
 
 const Navigation = () => {
@@ -105,14 +101,6 @@ const Navigation = () => {
                                           <MenuIcon />
                                     </IconButton>
 
-                                    <Box
-                                          component="img"
-                                          sx={{
-                                                height: 64,
-                                          }}
-                                          alt="Your logo."
-                                          src={logo}
-                                    />
                                     {
                                           user.email &&
                                           <Typography sx={{ color: 'yellow' }}>Wellcome: {user?.displayName}</Typography>

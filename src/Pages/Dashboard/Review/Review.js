@@ -6,10 +6,7 @@ import Swal from 'sweetalert2'
 
 const Review = () => {
 
-
-
       const [values, setValues] = useState({})
-
 
       const handelOnBlur = (e) => {
             e.preventDefault()

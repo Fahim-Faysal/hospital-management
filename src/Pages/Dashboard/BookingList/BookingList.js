@@ -28,7 +28,7 @@ const BookingList = () => {
       const { user } = useAuth()
       const [bookings, setBookings] = useState([])
       useEffect(() => {
-            fetch(`http://localhost:4000/appointments?email=${user?.email}`)
+            fetch(`https://salty-coast-47899.herokuapp.com/appointments?email=${user?.email}`)
                   .then(res => res.json())
                   .then(data => setBookings(data))
       }, [])
@@ -36,7 +36,7 @@ const BookingList = () => {
       const handelDelete = (id) => {
             const proceed = window.confirm('Are you sure you want to delete?')
             if (proceed) {
-                  fetch(`http://localhost:4000/appointments?/${id}`, {
+                  fetch(`https://salty-coast-47899.herokuapp.com/appointments?/${id}`, {
                         method: 'DELETE',
 
                   })

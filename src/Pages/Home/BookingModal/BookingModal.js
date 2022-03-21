@@ -33,7 +33,7 @@ const BookingModal = ({ service, open, handleOpen, handleClose }) => {
             e.preventDefault()
             const result = { ...info }
             console.log(result);
-            fetch('http://localhost:4000/appointment', {
+            fetch('https://salty-coast-47899.herokuapp.com/appointment', {
                   method: 'POST',
                   headers: {
                         'content-type': 'application/json'

@@ -8,7 +8,7 @@ const ProjectDiscover = () => {
       const [tests, setTest] = useState([])
 
       useEffect(() => {
-            fetch('http://localhost:4000/medical')
+            fetch('https://salty-coast-47899.herokuapp.com/medical')
                   .then(res => res.json())
                   .then(data => setTest(data))
       }, [])

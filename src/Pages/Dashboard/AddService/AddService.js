@@ -21,7 +21,7 @@ const AddService = () => {
             const result = { ...values }
             console.log(result);
 
-            fetch('http://localhost:4000/addservice', {
+            fetch('https://salty-coast-47899.herokuapp.com/addservice', {
                   method: 'POST',
                   headers: {
                         'content-type': 'application/json'
